@@ -93,6 +93,7 @@ export default function VideoReactions() {
                     border-radius:50%;
                     position:relative;
                     animation: spin 5s linear infinite;
+                    background:url('https://picsum.photos/100/100');
                 }
 
                 @keyframes spin {
