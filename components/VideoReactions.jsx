@@ -32,7 +32,8 @@ export default function VideoReactions() {
                     </svg>
                 </div>
                 <div className="audio">
-                    audio
+                    <div className="image">
+                    </div>
                 </div>
             </div>
             <style jsx>{`
@@ -72,6 +73,31 @@ export default function VideoReactions() {
                     display:grid;
                     place-items:center;
                     line-height:0;
+                }
+
+                .audio {
+                    background:#555;
+                    width:2.8rem;
+                    height:2.8rem;
+                    border-radius:50%;
+                    border:.12rem solid #000;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                .audio .image {
+                    width:1rem;
+                    height:1rem;
+                    background:#ffffff;
+                    border-radius:50%;
+                    position:relative;
+                    animation: spin 5s linear infinite;
+                }
+
+                @keyframes spin {
+                    from {transform:rotate(0deg);}
+                    to {transform:rotate(360deg);}
                 }
             `}</style>
         </>

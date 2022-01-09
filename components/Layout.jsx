@@ -1,11 +1,15 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
+    
+    const router = useRouter()
+    
     return(
         <>
             {children}
             <nav className="navigation">
-                <div className={window.location.pathname === '/' ? 'link active' : 'link'}>
+                <div className={router.pathname === '/' ? 'link active' : 'link'}>
                     <Link href="/"><a>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -15,7 +19,7 @@ export default function Layout({ children }) {
                         </svg>    
                     </a></Link>
                 </div>
-                <div className={window.location.pathname === '/search' ? 'link active' : 'link'}>
+                <div className={router.pathname === '/search' ? 'link active' : 'link'}>
                     <Link href="/search"><a>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -24,7 +28,7 @@ export default function Layout({ children }) {
                         </svg>
                     </a></Link>
                 </div>
-                <div className={window.location.pathname === '/create' ? 'link active' : 'link'}>
+                <div className={router.pathname === '/create' ? 'link active' : 'link'}>
                     <Link href="/create"><a>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-square-plus create" width="38" height="38" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -34,7 +38,7 @@ export default function Layout({ children }) {
                         </svg>
                     </a></Link>
                 </div>
-                <div className={window.location.pathname === '/inbox' ? 'link active' : 'link'}>
+                <div className={router.pathname === '/inbox' ? 'link active' : 'link'}>
                     <Link href="/inbox"><a>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-send" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -43,7 +47,7 @@ export default function Layout({ children }) {
                         </svg>    
                     </a></Link>
                 </div>
-                <div className={window.location.pathname === '/profile' ? 'link active' : 'link'}>
+                <div className={router.pathname === '/profile' ? 'link active' : 'link'}>
                     <Link href="/profile"><a>
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
