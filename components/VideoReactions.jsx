@@ -1,21 +1,35 @@
 import { useState } from 'react';
 
 export default function VideoReactions() {
+
+    const [like, setLike] = useState(false);
+
     return(
         <>
             <div className="reactions">
                 <div className="profilelogo">
-                    perfil
-                    <span></span>
+                    
                 </div>
                 <div className="like">
-                    like
+                    <svg onClick={() => setLike(!like)} xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke={like === false ? '#fff' : '#ff6060'} fill={like === false ? '#fff' : '#ff6060'} strokeLinecap="round" strokeLinejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
                 </div>
                 <div className="comments">
-                    comms
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-circle-2" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                        <line x1="12" y1="12" x2="12" y2="12.01" />
+                        <line x1="8" y1="12" x2="8" y2="12.01" />
+                        <line x1="16" y1="12" x2="16" y2="12.01" />
+                    </svg>
                 </div>
                 <div className="share">
-                    share
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-forward-up" width="48" height="48" viewBox="0 0 24 24" strokeWidth="3" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M15 13l4 -4l-4 -4m4 4h-11a4 4 0 0 0 0 8h1" />
+                    </svg>
                 </div>
                 <div className="audio">
                     audio
@@ -34,6 +48,31 @@ export default function VideoReactions() {
                     color:white;
                     z-index:1;
                 }    
+
+                .profilelogo {
+                    width:3rem;
+                    height:3rem;
+                    border-radius:50%;
+                    background:#000000;
+                    border:.15rem solid #ffffff;
+                    display:flex;
+                    position:relative;
+                }
+
+                .profilelogo::after {
+                    content:'+';
+                    position:absolute;
+                    bottom:-.5rem;
+                    left:30%;
+                    width:1.2rem;
+                    height:1.2rem;
+                    background:#ff5050;
+                    border-radius:50%;
+                    font-weight:bold;
+                    display:grid;
+                    place-items:center;
+                    line-height:0;
+                }
             `}</style>
         </>
     )
