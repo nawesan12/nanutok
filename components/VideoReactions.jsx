@@ -59,6 +59,7 @@ export default function VideoReactions() {
                     border:.15rem solid #ffffff;
                     display:flex;
                     position:relative;
+                    background:url('/images/profile.jpg') no-repeat center center;
                 }
 
                 .profilelogo::after {
