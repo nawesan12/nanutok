@@ -15,6 +15,7 @@ export default function VideoReactions() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                     </svg>
+                    <span>{like === true ? '1' : '0'}</span>
                 </div>
                 <div className="comments">
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-circle-2" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -73,6 +74,13 @@ export default function VideoReactions() {
                     display:grid;
                     place-items:center;
                     line-height:0;
+                }
+
+                .like {
+                    display:flex;
+                    flex-direction:column;
+                    font-size:.8rem;
+                    font-weight:500;
                 }
 
                 .audio {
