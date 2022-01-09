@@ -47,6 +47,7 @@ export default function Header() {
                     z-index:1;
                     color:#fff;
                     padding:0 1rem;
+                    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(41,41,41,0.5606617647058824) 50%, rgba(36,36,40,0.7315301120448179) 77%, rgba(41,41,41,1) 94%, rgba(38,38,40,1) 98%, rgba(0,0,0,0.5802696078431373) 100%);
                 }
 
                 .category span {
