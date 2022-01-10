@@ -11,6 +11,12 @@ export default function NanuTok() {
                 </article>
             </section>
 
+            {/*<Image src="/images/nanutok.jpg" layout="fill" objectFit="cover" alt="NanuTok"/>
+                <article className="info">
+                    <h5>@{`nawesan12`}</h5>
+                    <p>{`Hola bebu uwu estamos en un tiktok, en nuestro propio tiktok AAAAA`}</p>
+                </article>*/}
+
             <style jsx>{`
                 .nanutok {
                     width:100vw;
