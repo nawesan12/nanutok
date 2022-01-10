@@ -3,7 +3,6 @@ import { useState } from 'react'
 import PersonalVideos from './PersonalVideos'
 import LikedVideos from './LikedVideos'
 import PrivateVideos from './PrivateVideos'
-import { useRouter } from 'next/router'
 
 export default function ProfileVideos({ videos }) {
 
