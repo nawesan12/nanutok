@@ -27,7 +27,9 @@ export default function ProfileVideos() {
     return(
         <>
         <header>
-            <div><button onClick={openPersonalVideos} className={activePersonalVideos === true ? 'button_active' : ''} ><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-layout-grid" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <div><button onClick={openPersonalVideos}
+                         className={activePersonalVideos  === true || 
+                         activeLikedVideos === false && activePrivateVideos === false ? 'button_active' : ''} ><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-layout-grid" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <rect x="4" y="4" width="6" height="6" rx="1" />
             <rect x="14" y="4" width="6" height="6" rx="1" />

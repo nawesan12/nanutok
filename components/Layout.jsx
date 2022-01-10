@@ -67,7 +67,7 @@ export default function Layout({ children }) {
                     bottom:0;
                     width:100vw;
                     height:8vh;
-                    background:#292929;
+                    background:${router.pathname === '/' ? '#000' : '#292929'};
                     display:flex;
                     justify-content:space-around;
                     align-items:center;
