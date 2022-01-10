@@ -20,7 +20,7 @@ export default function NanuTok() {
             <style jsx>{`
                 .nanutok {
                     width:100vw;
-                    height:90vh;
+                    height:92vh;
                     position:relative;
                 }    
 
