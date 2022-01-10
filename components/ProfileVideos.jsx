@@ -1,8 +1,13 @@
 import { useState } from 'react'
 
-export default function ProfileVideos() {
+import PersonalVideos from './PersonalVideos'
+import LikedVideos from './LikedVideos'
+import PrivateVideos from './PrivateVideos'
+import { useRouter } from 'next/router'
 
-    const [activePersonalVideos, setActivePersonalVideos] = useState(false)
+export default function ProfileVideos({ videos }) {
+
+    const [activePersonalVideos, setActivePersonalVideos] = useState(true)
     const [activeLikedVideos, setActiveLikedVideos] = useState(false)
     const [activePrivateVideos, setActivePrivateVideos] = useState(false)
      
@@ -48,9 +53,9 @@ export default function ProfileVideos() {
             </svg></button></div>
         </header>
         <section className="profile_videos">
-            {/*<PersonalVideos display={activePersonalVideos === true ? true : false} />
-            <LikedVideos display={activeLikedVideos === true ?  true : false}/>
-            <PrivateVideos display={activePrivateVideos === true ? true : false}/>*/}
+            <PersonalVideos display={activePersonalVideos} videos={videos.personalVideos}/>
+            <LikedVideos display={activeLikedVideos} videos={videos.likedVideos}/>
+            <PrivateVideos display={activePrivateVideos} videos={videos.privateVideos} />
         </section>
 
         <style jsx>{`

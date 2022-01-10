@@ -65,7 +65,7 @@ export default function ProfileResume({user}) {
             <p>{user.description}</p>
         </section>
 
-        <ProfileVideos />
+        <ProfileVideos videos={user.videos}/>
 
         <style jsx>{`
 
