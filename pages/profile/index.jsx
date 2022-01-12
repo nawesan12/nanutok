@@ -5,7 +5,7 @@ export default function Profile() {
 
     const user = {
         username: 'habaneropicantito',
-        profilePicture: 'https://p77-sign-va.tiktokcdn.com/musically-maliva-obj/1659918152569861~c5_100x100.jpeg?x-expires=1641873600&x-signature=cwPJ9%2Bv0EYFaOyN7HK1ThWimEKU%3D',
+        profilePicture: '/images/profile.jpeg',
         statistics: {
             posts: 10,
             followers: 12,

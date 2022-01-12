@@ -4,7 +4,7 @@ export default function NanuTok() {
     return(
         <>
             <section className="nanutok">
-                <Image src="/images/nanutok.jpg" layout="fill" objectFit="cover" alt="NanuTok"/>
+                <Image src="/images/nanutok.jpg" layout="fill" objectFit="cover" alt="NanuTok" priority/>
                 <article className="info">
                     <h5>@{`nawesan12`}</h5>
                     <p>{`Hola bebu uwu estamos en un tiktok, en nuestro propio tiktok AAAAA`}</p>
