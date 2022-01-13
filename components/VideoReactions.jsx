@@ -40,7 +40,8 @@ export default function VideoReactions() {
             <style jsx>{`
                 .reactions {
                     position:fixed;
-                    bottom:15vh;
+                    bottom:8vh;
+                    margin:.5rem;
                     right:0;
                     height:50vh;
                     display:flex;
