@@ -5,7 +5,7 @@ export default function LikedVideos({display, videos}) {
             {videos.map((video, index) => (
                 <div className="liked-video-container" key={index} style={{width:'33vw'}} >
                     <iframe
-                        style={{background:'#ddd', width:'32vw', height:'55vw'}}	
+                        style={{background:'#fdd', width:'32vw', height:'55vw'}}	
                         src={video.url}
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

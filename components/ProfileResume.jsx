@@ -26,8 +26,8 @@ export default function ProfileResume({user}) {
         </header>
         <section className="profile_info">
             <div className="user_info">
-            <div className="profile_picture"></div>
-            <span className="profile_username">@{user.username}</span>
+                <div className="profile_picture"></div>
+                <span className="profile_username">@{user.username}</span>
             </div>
             
             

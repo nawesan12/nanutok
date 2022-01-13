@@ -7,7 +7,6 @@ export default function Reproductor() {
         <>
             <Header />
             <NanuTok />
-            <VideoReactions/>
         </>
     )
 }
