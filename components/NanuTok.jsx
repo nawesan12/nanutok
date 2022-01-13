@@ -46,7 +46,7 @@ export default function NanuTok() {
                 .info {
                     position:absolute;
                     z-index:10;
-                    bottom:0;
+                    bottom:8vh;
                     width:70vw;
                     margin: .5rem;
                     color:white;
