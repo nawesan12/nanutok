@@ -10,8 +10,8 @@ export default function NanuTok() {
         audioName:'nombre del audio',
         audioAutor: 'autor del audio',
         likes:500,
-        comments: [],
-
+        comments: [1, 2, 3],
+        createdAt: ''
     }
 
     return(

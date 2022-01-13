@@ -4,13 +4,12 @@ export default function VideoReactions(props) {
 
     const [like, setLike] = useState(false);
     const [likeAmount, setLikeAmount] = useState(props.likes)
-    const [commentAmount, setCommentAmount] = useState(props.comments.lenght)
+    const [commentAmount, setCommentAmount] = useState(props.comments)
 
     const likeVideo = () => {
         setLike(!like)
         like === false ? setLikeAmount(props.likes + 1) : setLikeAmount(props.likes)
     }
-
 
     return(
         <>
@@ -33,13 +32,13 @@ export default function VideoReactions(props) {
                         <line x1="8" y1="12" x2="8" y2="12.01" />
                         <line x1="16" y1="12" x2="16" y2="12.01" />
                     </svg>
+                    <span>{commentAmount.length.toString()}</span>
                 </div>
                 <div className="share" onClick={() => alert('le diste al boton de compartir video')}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-forward-up" width="48" height="48" viewBox="0 0 24 24" strokeWidth="3" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M15 13l4 -4l-4 -4m4 4h-11a4 4 0 0 0 0 8h1" />
                     </svg>
-                    <span>{commentAmount}</span>
                 </div>
                 <div className="audio">
                     <div className="image">
@@ -88,6 +87,13 @@ export default function VideoReactions(props) {
                 }
 
                 .like {
+                    display:flex;
+                    flex-direction:column;
+                    font-size:.8rem;
+                    font-weight:500;
+                }
+
+                .comments {
                     display:flex;
                     flex-direction:column;
                     font-size:.8rem;
