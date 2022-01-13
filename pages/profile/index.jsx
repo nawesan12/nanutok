@@ -32,7 +32,70 @@ export default function Profile() {
                 views:20,
                 description:'Second video on NanuTok',
                 url:''
-                }
+                },
+                {
+                id:3,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:4,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:5,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:6,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:7,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:8,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
+                {
+                id:9,
+                likes:20,
+                commentsCount:15,
+                comments:[{user: 'vani', comment:'hola naweuu'}, {user: 'alejandra', comment:'que buen videoo'}],
+                views:20,
+                description:'Second video on NanuTok',
+                url:''
+                },
             ],
             likedVideos: [{
                 id:1,

@@ -12,7 +12,7 @@ export default function PersonalVideos({display, videos}) {
                         allowFullScreen
                         thumbnail={video.thumbnail}
                     />
-                    <div className="personal-video-info" style={{float:'right', position:'relative', bottom:'3.5vh', right:'1.5vh'}}>
+                    <div className="personal-video-info" style={{float:'right', position:'relative', bottom:'3.5vh', right:'1.5vh', lineHeight:0}}>
                         <p>{video.views}</p>
                     </div>
                 </div>

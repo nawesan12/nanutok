@@ -70,11 +70,15 @@ export default function ProfileResume({user}) {
         <style jsx>{`
 
             .profile_settings {
+                height:8vh;
+                width:100vw;
                 display:flex;
                 justify-content:space-between;
                 align-items:center;
                 padding:0 1rem;
                 border-bottom:1px solid #ccc;
+                position:fixed;
+                background:#fff;
             }
 
             .profile_settings span {
@@ -83,10 +87,6 @@ export default function ProfileResume({user}) {
 
             .profile_settings div span {
                 margin-left:.5rem;
-            }
-
-            .profile_settings {
-                height:8vh;
             }
 
             .profile_info {
@@ -98,6 +98,7 @@ export default function ProfileResume({user}) {
                 align-items:center;
                 padding-bottom:.5rem;
                 border-bottom: 1px solid #ccc;
+                padding-top:8vh;
             }    
 
             .user_info {
