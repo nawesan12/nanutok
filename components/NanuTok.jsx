@@ -8,7 +8,10 @@ export default function NanuTok() {
         url: 'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
         audio: '',
         audioName:'nombre del audio',
-        audioAutor: 'autor del audio'
+        audioAutor: 'autor del audio',
+        likes:500,
+        comments: [],
+
     }
 
     return(
@@ -23,7 +26,7 @@ export default function NanuTok() {
                     <marquee className="audio_info" scrollAmount="3">{video.audioName + ' - ' + video.audioAutor}</marquee>
                 </article>
             </section>
-            <VideoReactions />
+            <VideoReactions likes={video.likes} comments={video.comments} user={video.username}/>
 
             {/*<Image src="/images/nanutok.jpg" layout="fill" objectFit="cover" alt="NanuTok"/>
                 <article className="info">

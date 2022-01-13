@@ -1,8 +1,16 @@
 import { useState } from 'react';
 
-export default function VideoReactions() {
+export default function VideoReactions(props) {
 
     const [like, setLike] = useState(false);
+    const [likeAmount, setLikeAmount] = useState(props.likes)
+    const [commentAmount, setCommentAmount] = useState(props.comments.lenght)
+
+    const likeVideo = () => {
+        setLike(!like)
+        like === false ? setLikeAmount(props.likes + 1) : setLikeAmount(props.likes)
+    }
+
 
     return(
         <>
@@ -11,13 +19,13 @@ export default function VideoReactions() {
                     
                 </div>
                 <div className="like">
-                    <svg onClick={() => setLike(!like)} xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke={like === false ? '#fff' : '#ff6060'} fill={like === false ? '#fff' : '#ff6060'} strokeLinecap="round" strokeLinejoin="round">
+                    <svg onClick={likeVideo} xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke={like === false ? '#fff' : '#ff6060'} fill={like === false ? '#fff' : '#ff6060'} strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                     </svg>
-                    <span>{like === true ? '1' : '0'}</span>
+                    <span>{likeAmount.toString()}</span>
                 </div>
-                <div className="comments">
+                <div className="comments" onClick={() => alert('le diste al boton de ver los comentarios')}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-circle-2" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
@@ -26,11 +34,12 @@ export default function VideoReactions() {
                         <line x1="16" y1="12" x2="16" y2="12.01" />
                     </svg>
                 </div>
-                <div className="share">
+                <div className="share" onClick={() => alert('le diste al boton de compartir video')}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-forward-up" width="48" height="48" viewBox="0 0 24 24" strokeWidth="3" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M15 13l4 -4l-4 -4m4 4h-11a4 4 0 0 0 0 8h1" />
                     </svg>
+                    <span>{commentAmount}</span>
                 </div>
                 <div className="audio">
                     <div className="image">
