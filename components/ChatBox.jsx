@@ -20,7 +20,16 @@ export default function ChatBox({lastMessage, user}) {
                 height:4.5rem;
                 display:grid;
                 grid-template-columns: 5rem 1fr;
-                margin-top:.3rem;
+                margin-top:.8rem;
+            }
+
+            .chat_box::after {
+                content:'';
+                width:80vw;
+                height:1px;
+                background:#eee;
+                transform:translateX(10%);
+                margin-top:.4rem;
             }
 
             .user_image {
