@@ -23,12 +23,12 @@ export default function SearchHeader() {
         </header>
         <style jsx>{`
             .search_bar_header {
-                height:8vh;
+                height:10vh;
                 width:100vw;
                 display:flex;
                 align-items:center;
                 justify-content:space-around;
-                padding:.5rem;
+                padding:0 .5rem;
             }
 
             .search_bar {

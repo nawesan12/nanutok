@@ -27,10 +27,10 @@ export default function VideoReactions(props) {
                 <div className="comments" onClick={() => alert('le diste al boton de ver los comentarios')}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-circle-2" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" fill="#fff"/>
                         <line x1="12" y1="12" x2="12" y2="12.01"/>
-                        <line x1="8" y1="12" x2="8" y2="12.01" />
-                        <line x1="16" y1="12" x2="16" y2="12.01" />
+                        <line x1="8" y1="12" x2="8" y2="12.01"/>
+                        <line x1="16" y1="12" x2="16" y2="12.01"/>
                     </svg>
                     <span>{commentAmount.length.toString()}</span>
                 </div>
@@ -112,8 +112,8 @@ export default function VideoReactions(props) {
                 }
 
                 .audio .image {
-                    width:1rem;
-                    height:1rem;
+                    width:1.2rem;
+                    height:1.2rem;
                     background:#ffffff;
                     border-radius:50%;
                     position:relative;
