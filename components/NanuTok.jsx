@@ -23,7 +23,14 @@ export default function NanuTok() {
                 <article className="info">
                     <h5>@{video.username}</h5>
                     <p>{video.description}</p>
-                    <marquee className="audio_info" scrollAmount="3">{video.audioName + ' - ' + video.audioAutor}</marquee>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-music" width="16" height="16" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="17" r="3"/>
+                    <circle cx="16" cy="17" r="3"/>
+                    <polyline points="9 17 9 4 19 4 19 17"/>
+                    <line x1="9" y1="8" x2="19" y2="8"/>
+                    </svg>
+                    <marquee className="audio_info">{video.audioName + ' - ' + video.audioAutor}</marquee>
                 </article>
             </section>
             <VideoReactions likes={video.likes} comments={video.comments} user={video.username}/>

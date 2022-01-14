@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import InboxHeader from '../../components/InboxHeader'
+import ChatBox from '../../components/ChatBox'
 
 export default function Inbox() {
     return(
@@ -9,6 +10,11 @@ export default function Inbox() {
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <InboxHeader />
+        <ChatBox />
+        <ChatBox />
+        <ChatBox />
+        <ChatBox />
+        <ChatBox />
         </>
     )
 }

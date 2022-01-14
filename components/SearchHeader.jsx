@@ -33,7 +33,7 @@ export default function SearchHeader() {
 
             .search_bar {
                 width:85%;
-                height:85%;
+                height:2.5rem;
                 background:#aaa;
                 display:flex;
                 align-items:center;
