@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
 import SearchHeader from '../../components/SearchHeader'
+import SearchCarrousel from '../../components/SearchCarrousel'
+import RecommendedHashtag from '../../components/RecommendedHashtag'
 
 export default function Search() {
     return(
@@ -11,6 +13,15 @@ export default function Search() {
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <SearchHeader />
+        
+        <div className="search" style={{marginBottom:'8vh', paddingTop:'10vh'}}>
+            <SearchCarrousel />
+            <RecommendedHashtag />
+            <RecommendedHashtag />
+            <RecommendedHashtag />
+            <RecommendedHashtag />
+        </div>
+        
         </>
     )
 }

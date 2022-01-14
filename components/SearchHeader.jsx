@@ -29,6 +29,8 @@ export default function SearchHeader() {
                 align-items:center;
                 justify-content:space-around;
                 padding:0 .5rem;
+                position:fixed;
+                background:#fff;
             }
 
             .search_bar {
